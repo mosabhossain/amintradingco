@@ -1,149 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Japanese Cars for export|Industrial Machinery| RMG </title>
-
-  <!-- SEO -->
-  <meta name="description" content="Established in 1993, Amin Trading Co. exports Japanese-made cars and machinery, trades chemicals, operates a halal-certified slaughterhouse, runs Amin Halal Food, and provides tailored web & software solutions." />
-  <meta name="keywords" content="Amin Trading, Japan car export, machinery export, halal wagyu, halal slaughterhouse Japan, Amin Halal Food, Japanese trading company" />
-  <meta name="author" content="Amin Trading Co." />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Amin Trading Co. | Global Trading Since 1993" />
-  <meta property="og:description" content="Japanese cars, machinery, halal wagyu, food trading, and digital solutions since 1993." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/og-image.jpg" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="Style.css" />
-</head>
-
-  <!-- Google tag (gtag.js) -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Japanese Cars for Export | Industrial Machinery | RMG | Amin Trading Co.</title>
+<meta name="description" content="Established in 1993, Amin Trading Co. exports Japanese-made cars and machinery, trades chemicals, operates a halal-certified slaughterhouse, runs Amin Halal Food, and provides tailored web &amp; software solutions.">
+<meta name="keywords" content="Amin Trading, Japan car export, machinery export, halal wagyu, halal slaughterhouse Japan, Amin Halal Food, Japanese trading company">
+<meta name="author" content="Amin Trading Co.">
+<meta property="og:title" content="Amin Trading Co. | Global Trading Since 1993">
+<meta property="og:description" content="Japanese cars, machinery, halal wagyu, food trading, and digital solutions since 1993.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="ATCLOGO.png">
+<link rel="icon" href="mark.png" type="image/png">
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y82P1FC505"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-Y82P1FC505');
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<style>
+/* Layout: slanted parallelogram motif taken from the logo's italic strokes; one bold moment in the navy marketplace band, everything else quiet. */
+:root {
+  --navy: #042856;
+  --navy-deep: #021a3d;
+  --red: #B91C2B;
+  --red-hi: #FF6B75;
+  --paper: #F4F6FA;
+  --white: #FFFFFF;
+  --ink: #0E1A2E;
+  --mute: #4F5E78;
+  --line: #D6DCE6;
+  --on-navy: #DCE5F3;
+  --on-navy-mute: #B8C6DE;
+  --f-display: "Archivo", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, system-ui, sans-serif;
+  --cut: 28px;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.75;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  z-index: 30;
+  background: var(--white);
+}
+img { max-width: 100%; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
 
+.in {
+  max-width: 1160px;
+  margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+section { scroll-margin-top: 76px; }
+.sec { padding-block: 88px; }
+
+/* Header */
+.top {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 20;
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+}
+.top .in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  padding-block: 10px;
+}
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--navy); }
+.brand img { height: 34px; width: auto; display: block; }
+.brand b {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-size: 1.05rem;
+  line-height: 1.1;
+}
+.brand small {
+  display: block;
+  font-family: var(--f-body);
+  font-style: normal;
+  font-weight: 500;
+  font-size: .68rem;
+  letter-spacing: .08em;
+  color: var(--mute);
+  text-transform: none;
+}
+nav { display: flex; flex-wrap: wrap; gap: 2px 22px; }
+nav a {
+  font-family: var(--f-display);
+  font-weight: 600;
+  font-size: .82rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover, nav a:focus-visible { border-bottom-color: var(--red); }
+nav a.mk { color: var(--red); }
+
+/* Type */
+h1, h2 { font-family: var(--f-display); font-style: italic; font-weight: 800; text-transform: uppercase; color: var(--navy); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2.3rem, 6.2vw, 4.4rem); line-height: .98; letter-spacing: -.01em; margin-bottom: 24px; }
+h1 em { font-style: inherit; color: var(--red); }
+h2 { font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.02; }
+.jp-sub {
+  display: block;
+  font-family: var(--f-body);
+  font-style: normal;
+  font-weight: 700;
+  font-size: .95rem;
+  letter-spacing: .14em;
+  text-transform: none;
+  color: var(--mute);
+  margin-top: 10px;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: .78rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin: 0 0 14px;
+}
+.eyebrow::before { content: ""; width: 26px; height: 8px; background: currentColor; transform: skewX(-30deg); }
+.jp { color: var(--mute); font-size: .93rem; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: .9rem;
+  line-height: 1.4;
+  text-decoration: none;
+  padding: 15px 34px;
+  clip-path: polygon(14px 0, 100% 0, calc(100% - 14px) 100%, 0 100%);
+  background: var(--red);
+  color: #fff;
+  transition: background .15s;
+}
+.btn:hover { background: #9E1623; }
+.btn.alt { background: var(--navy); }
+.btn.alt:hover { background: var(--navy-deep); }
+.btn:focus-visible { clip-path: none; outline: 3px solid var(--navy); outline-offset: 3px; }
+
+/* Hero */
+.hero { background: var(--paper); overflow: hidden; }
+.hero .in {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: 56px;
+  align-items: center;
+  padding-block: 72px 84px;
+}
+.lede { font-size: 1.08rem; max-width: 54ch; margin: 0 0 10px; }
+.lede + .jp { max-width: 54ch; margin: 0 0 32px; }
+.cta { display: flex; flex-wrap: wrap; gap: 14px; }
+.plate { position: relative; isolation: isolate; }
+.plate::before { content: ""; position: absolute; z-index: -1; inset: 22px -22px -22px 22px; background: var(--navy); }
+.plate::after { content: ""; position: absolute; z-index: 1; left: -14px; top: -10px; width: 44%; height: 10px; background: var(--red); transform: skewX(-30deg); }
+.plate img { display: block; width: 100%; height: auto; background: var(--white); padding: clamp(18px, 3vw, 36px); }
+.hero::after {
+  content: "";
+  display: block;
+  height: 10px;
+  background: linear-gradient(100deg, var(--navy) 0 58%, var(--red) 58% 66%, var(--navy-deep) 66% 100%);
+}
+
+/* About */
+.about .in { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 56px; align-items: start; }
+.year {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 800;
+  font-size: clamp(5rem, 15vw, 10.5rem);
+  line-height: .85;
+  letter-spacing: -.03em;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--navy);
+  margin: 28px 0 0;
+}
+.about p { margin: 0 0 12px; max-width: 58ch; }
+.about p.jp { margin-bottom: 0; }
+
+/* Businesses */
+.biz { background: var(--paper); }
+.ledger { list-style: none; margin: 40px 0 0; padding: 0; border-bottom: 1px solid var(--line); }
+.ledger li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: 10px 40px;
+  padding-block: 26px;
+  border-top: 1px solid var(--line);
+}
+.ledger h3 {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: 0;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: var(--navy);
+}
+.ledger h3::before { content: ""; flex: none; width: 18px; height: 8px; background: var(--red); transform: skewX(-30deg); translate: 0 -2px; }
+.ledger p { margin: 0; }
+
+/* Marketplace */
+.market {
+  background: var(--navy);
+  color: #fff;
+  clip-path: polygon(0 var(--cut), 100% 0, 100% calc(100% - var(--cut)), 0 100%);
+  margin-block: calc(var(--cut) * -1);
+  padding-block: calc(var(--cut) + 84px);
+  position: relative;
+}
+.market .in { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 56px; align-items: start; }
+.market h2 { color: #fff; font-size: clamp(2.1rem, 5vw, 3.4rem); }
+.market .jp-sub { color: var(--on-navy-mute); }
+.market .eyebrow { color: var(--red-hi); }
+.market p { color: var(--on-navy); max-width: 52ch; margin: 22px 0 0; }
+.market p.jp { color: var(--on-navy-mute); margin-top: 10px; }
+.market .btn { margin-top: 30px; }
+.market a:focus-visible { outline-color: #fff; }
+.cats { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(255, 255, 255, .22); }
+.cats a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0 16px;
+  align-items: center;
+  padding: 18px 8px 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .22);
+  color: #fff;
+  text-decoration: none;
+  transition: padding .15s, background .15s;
+}
+.cats a:hover { padding-left: 16px; background: rgba(255, 255, 255, .07); }
+.cats strong { font-family: var(--f-display); font-style: italic; font-weight: 800; font-size: 1.5rem; text-transform: uppercase; line-height: 1.15; }
+.cats small { color: var(--on-navy-mute); font-size: .85rem; }
+.cats .go { grid-row: 1 / span 2; grid-column: 2; font-family: var(--f-display); font-weight: 800; font-size: 1.6rem; color: var(--red-hi); }
+.how { grid-column: 1 / -1; margin-top: 12px; padding-top: 36px; border-top: 1px solid rgba(255, 255, 255, .22); }
+.how h3 { margin: 0 0 24px; font-family: var(--f-display); font-weight: 700; font-size: .85rem; letter-spacing: .16em; text-transform: uppercase; color: var(--on-navy-mute); }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; counter-reset: step; }
+.steps li { counter-increment: step; min-width: 0; }
+.steps li::before { content: counter(step); display: block; font-family: var(--f-display); font-style: italic; font-weight: 800; font-size: 2.4rem; line-height: 1; color: var(--red-hi); margin-bottom: 10px; }
+.steps b { display: block; font-weight: 700; line-height: 1.4; }
+.steps span { display: block; color: var(--on-navy-mute); font-size: .88rem; line-height: 1.6; margin-top: 4px; }
+
+/* Contact */
+.contact .in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+.contact p { margin: 0 0 12px; max-width: 54ch; }
+.contact h2 { margin-bottom: 20px; }
+.mailbox { background: var(--paper); border-left: 8px solid var(--red); padding: 28px; }
+.mailbox .label { display: block; font-family: var(--f-display); font-weight: 700; font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; color: var(--mute); }
+.mailbox .addr { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.05rem, 2.6vw, 1.5rem); color: var(--navy); overflow-wrap: anywhere; margin: 6px 0 20px; }
+.mailbox .row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+.status { font-size: .85rem; color: var(--mute); }
+
+/* Footer */
+footer { background: var(--navy-deep); color: var(--on-navy-mute); font-size: .85rem; }
+footer .in { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; padding-block: 28px; }
+
+@media (max-width: 860px) {
+  .sec { padding-block: 64px; }
+  .hero .in { grid-template-columns: minmax(0, 1fr); gap: 44px; padding-block: 48px 64px; }
+  .about .in, .market .in, .contact .in { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .ledger li { grid-template-columns: minmax(0, 1fr); }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .market { padding-block: calc(var(--cut) + 60px); }
+}
+@media (max-width: 480px) {
+  .plate::before { inset: 12px -12px -12px 12px; }
+  .steps { grid-template-columns: minmax(0, 1fr); }
+  .btn { padding-inline: 28px; }
+  nav { gap: 2px 16px; }
+  :root { --cut: 18px; }
+}
+</style>
+</head>
 <body>
-  <div class="wrap">
-
-    <header>
-      <div class="logo">Amin Trading Co.</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a href="company.html">Portfolio</a>
-
-      </nav>
-    </header>
-
-    <main>
-
-      <!-- HERO -->
-      <section class="hero">
-        <h1>Global Trading Since 1993</h1>
-        <p>
-          Established in 1993, Amin Trading Co. operates across international trade,
-          halal food processing, retail & wholesale grocery, and digital solutions.
-        </p>
-        <p style="margin-top:16px;">
-          1993年創業のアミン・トレーディング株式会社は、日本製自動車・機械・化学品の輸出、
-          ハラール認証食肉処理、食品卸売・小売、Web・ソフトウェア開発を行っています。
-        </p>
-      </section>
-
-      <!-- IMAGE GALLERY -->
-      <section class="gallery-section">
-        <h2>Our Operations</h2>
-
-        <div class="gallery">
-          <img src="images/1.jpg" alt="Japanese car export">
-          <img src="images/2.jpg" alt="Industrial machinery">
-          <img src="images/3.jpg" alt="Used medical equipment">
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about">
-        <h2>About / 会社概要</h2>
-        <p>
-          Established in 1993, Amin Trading Co. has grown into a diversified trading
-          company serving domestic and international markets with reliability and
-          long-term partnerships.
-        </p>
-        <p>
-          当社は1993年の創業以来、国内外のお客様と長期的な信頼関係を築きながら、
-          多角的な事業を展開してまいりました。
-        </p>
-      </section>
-
-      <!-- SERVICES -->
-      <section id="services">
-        <h2>Our Businesses / 事業内容</h2>
-
-        <div class="grid">
-          <div class="card">
-            <strong>Automobile & Machinery Export</strong>
-            <p>Export of Japanese-made cars, industrial machinery and used medical equipment worldwide.</p>
-            <p>日本製自動車・産業機械の海外輸出</p>
-          </div>
-
-          <div class="card">
-            <strong>RMG</strong>
-            <p>International export of ready-made garments from Bangladesh.</p>
-          </div>
-
-          <div class="card">
-            <strong>Halal Slaughterhouse</strong>
-            <p>Halal-certified processing of Wagyu and regular cattle for domestic use and export.</p>
-            <p>ハラール認証の和牛・国産牛食肉処理（国内・輸出）</p>
-          </div>
-
-          <div class="card">
-            <strong>Amin Halal Food</strong>
-            <p>Wholesale and retail halal grocery operations.</p>
-            <p>ハラール食品の卸売・小売事業</p>
-          </div>
-
-          <div class="card">
-            <strong>Web & Software Solutions</strong>
-            <p>Tailored websites and software for business needs.</p>
-            <p>業務に合わせたWeb・ソフトウェア開発</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact">
-        <h2>Contact / お問い合わせ</h2>
-        <p>For business inquiries, partnerships, or export requests:</p>
-        <p>取引・提携・輸出に関するお問い合わせはこちらまでご連絡ください。</p>
-        <p class="accent">Email: mosabhossain111@gmail.com</p>
-      </section>
-
-    </main>
-
-    <footer>
-      <div>© <span id="year"></span> Amin Trading Co</div>
-      <div>All rights reserved.</div>
-    </footer>
-
+<header class="top" id="top">
+  <div class="in">
+    <a class="brand" href="#top">
+      <img src="mark.png" alt="">
+      <b>Amin Trading Co.<small>アミントレーディング株式会社</small></b>
+    </a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#businesses">Businesses</a>
+      <a class="mk" href="#marketplace">Marketplace</a>
+      <a href="#contact">Contact</a>
+      <a href="company.html">Portfolio</a>
+    </nav>
   </div>
+</header>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<main>
+  <section class="hero">
+    <div class="in">
+      <div>
+        <h1>Global Trading <em>Since 1993</em></h1>
+        <p class="lede">Established in 1993, Amin Trading Co. operates across international trade, halal food processing, retail &amp; wholesale grocery, and digital solutions.</p>
+        <p class="jp">1993年創業のアミン・トレーディング株式会社は、日本製自動車・機械・化学品の輸出、ハラール認証食肉処理、食品卸売・小売、Web・ソフトウェア開発を行っています。</p>
+        <div class="cta">
+          <a class="btn" href="#marketplace">Browse cars &amp; machinery</a>
+          <a class="btn alt" href="#contact">Contact us</a>
+        </div>
+      </div>
+      <div class="plate">
+        <img src="logo.png" alt="Amin Trading Co. logo" width="760" height="459">
+      </div>
+    </div>
+  </section>
+
+  <section class="sec about" id="about">
+    <div class="in">
+      <div>
+        <p class="eyebrow">Since 1993</p>
+        <h2>About <span class="jp-sub">会社概要</span></h2>
+        <div class="year" aria-hidden="true">1993</div>
+      </div>
+      <div>
+        <p>Established in 1993, Amin Trading Co. has grown into a diversified trading company serving domestic and international markets with reliability and long-term partnerships.</p>
+        <p class="jp">当社は1993年の創業以来、国内外のお客様と長期的な信頼関係を築きながら、多角的な事業を展開してまいりました。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec biz" id="businesses">
+    <div class="in">
+      <p class="eyebrow">What we do</p>
+      <h2>Our Businesses <span class="jp-sub">事業内容</span></h2>
+      <ul class="ledger">
+        <li>
+          <h3>Automobile &amp; Machinery Export</h3>
+          <div>
+            <p>Export of Japanese-made cars, industrial machinery and used medical equipment worldwide.</p>
+            <p class="jp">日本製自動車・産業機械の海外輸出</p>
+          </div>
+        </li>
+        <li>
+          <h3>RMG</h3>
+          <div>
+            <p>International export of ready-made garments from Bangladesh.</p>
+            <p class="jp">バングラデシュ製既製服の海外輸出</p>
+          </div>
+        </li>
+        <li>
+          <h3>Halal Slaughterhouse</h3>
+          <div>
+            <p>Halal-certified processing of Wagyu and regular cattle for domestic use and export.</p>
+            <p class="jp">ハラール認証の和牛・国産牛食肉処理（国内・輸出）</p>
+          </div>
+        </li>
+        <li>
+          <h3>Amin Halal Food</h3>
+          <div>
+            <p>Wholesale and retail halal grocery operations.</p>
+            <p class="jp">ハラール食品の卸売・小売事業</p>
+          </div>
+        </li>
+        <li>
+          <h3>Web &amp; Software Solutions</h3>
+          <div>
+            <p>Tailored websites and software for business needs.</p>
+            <p class="jp">業務に合わせたWeb・ソフトウェア開発</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="market" id="marketplace">
+    <div class="in">
+      <div>
+        <p class="eyebrow">Our marketplace · Japan Car Net</p>
+        <h2>Browse Cars &amp; Machinery <span class="jp-sub">車両・機械を探す</span></h2>
+        <p>Japan Car Net is our export marketplace for Japanese used cars, trucks and machinery. Send an inquiry on any listing to get a price and shipping quote to your port.</p>
+        <p class="jp">当社が運営する輸出向けマーケットプレイス「Japan Car Net」で、日本の中古車・トラック・機械をご覧いただけます。各掲載品からのお問い合わせで、仕向港までのお見積りをご案内します。</p>
+        <a class="btn" href="https://japancarnet.com/" target="_blank" rel="noopener">Visit Japan Car Net</a>
+      </div>
+      <ul class="cats">
+        <li><a href="https://japancarnet.com/" target="_blank" rel="noopener"><strong>Cars</strong><span class="go" aria-hidden="true">→</span><small>乗用車 · Toyota, Suzuki, Daihatsu and more</small></a></li>
+        <li><a href="https://japancarnet.com/" target="_blank" rel="noopener"><strong>Trucks</strong><span class="go" aria-hidden="true">→</span><small>トラック</small></a></li>
+        <li><a href="https://japancarnet.com/" target="_blank" rel="noopener"><strong>Machinery</strong><span class="go" aria-hidden="true">→</span><small>機械 · Cranes, excavators, injection moulding machines</small></a></li>
+        <li><a href="https://japancarnet.com/" target="_blank" rel="noopener"><strong>Car Parts</strong><span class="go" aria-hidden="true">→</span><small>自動車部品</small></a></li>
+        <li><a href="https://japancarnet.com/" target="_blank" rel="noopener"><strong>Damaged Cars</strong><span class="go" aria-hidden="true">→</span><small>事故車</small></a></li>
+      </ul>
+      <div class="how">
+        <h3>How export buying works · 輸出購入の流れ</h3>
+        <ol class="steps">
+          <li><b>Inquiry</b><span>Ask for a price and shipping quote to your port. お問い合わせ</span></li>
+          <li><b>Proforma invoice and payment</b><span>Pay by bank transfer. プロフォーマ請求書・銀行送金</span></li>
+          <li><b>Shipping documents</b><span>Issued after payment clears. 船積書類の発行</span></li>
+          <li><b>Collection</b><span>Collect at your destination port. 仕向港で受け取り</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact">
+    <div class="in">
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h2>Contact <span class="jp-sub">お問い合わせ</span></h2>
+        <p>For business inquiries, partnerships, or export requests, write to us.</p>
+        <p class="jp">取引・提携・輸出に関するお問い合わせはこちらまでご連絡ください。</p>
+      </div>
+      <div class="mailbox">
+        <span class="label">Email</span>
+        <div class="addr" id="addr">mosabhossain111@gmail.com</div>
+        <div class="row">
+          <a class="btn" href="mailto:mosabhossain111@gmail.com">Write to us</a>
+          <button class="btn alt" type="button" id="copy">Copy address</button>
+          <span class="status" id="copystatus" role="status"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="in">
+    <div>© <span id="year">2026</span> Amin Trading Co.</div>
+    <div>All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+(function () {
+  var btn = document.getElementById("copy");
+  var out = document.getElementById("copystatus");
+  var addr = document.getElementById("addr");
+  btn.addEventListener("click", function () {
+    var text = addr.textContent.trim();
+    function selectIt() {
+      var r = document.createRange();
+      r.selectNodeContents(addr);
+      var s = window.getSelection();
+      s.removeAllRanges();
+      s.addRange(r);
+      out.textContent = "Address selected. Copy it with your keyboard.";
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { out.textContent = "Copied"; }, selectIt);
+    } else {
+      selectIt();
+    }
+  });
+})();
+</script>
 </body>
 </html>
-
 
 
 
